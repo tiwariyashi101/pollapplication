@@ -1,7 +1,7 @@
 import express from "express";
 import { body, validationResult } from "express-validator";
-import { requireAuth } from "../middlerware/auth";
-import * as pollController from "../Controller/pollcontroller";
+import { requireAuth } from "../middlerware/auth.js";
+import * as pollController from "../Controller/pollcontroller.js";
 
 const router = express.Router();
 

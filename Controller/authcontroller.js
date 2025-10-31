@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import User from "../model/user";
+import User from "../model/user.js";
 
 function signJwt(userId) {
   return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
@@ -54,4 +54,4 @@ const login = async (req, res, next) => {
     next(err);
   }
 };
-export { login, signup };
+export default { login, signup };

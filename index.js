@@ -1,11 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
+dotenv.config();
 import cors from "cors";
 import dbConnect from "./database/dbconnect.js";
 import authRouter from "./Routes/userRouter.js";
 import pollRouter from "./Routes/pollRouter.js";
-
-dotenv.config();
 
 // ✅ Connect to MongoDB before starting the server
 dbConnect();
